@@ -42,7 +42,7 @@ class ApiProblemResponse extends Response
      */
     public function getContent()
     {
-        return json_encode($this->apiProblem->toArray(), JSON_UNESCAPED_SLASHES);
+        return json_encode($this->apiProblem->toArray());
     }
 
     /**
